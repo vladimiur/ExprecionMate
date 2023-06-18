@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExprecionMate.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <!--#CAmbiamos la imagen-->
+            <Image Source="mate.png"
+               SemanticProperties.Description="Cute dot net bot waving hi to you!"
+               HeightRequest="200"
+               HorizontalOptions="Center"/>
+
+            <Label
+                Text="Matematicas"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <!--#Creamos los entry necesarios para la exprecion matematicas-->
+            <Label
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Entry Placeholder="Intruduce el primer numero" x:Name="datoA"/>
+            <Entry Placeholder="Intruduce el segundo numero" x:Name="datoB"/>
+            <Entry Placeholder="Resultado" x:Name="resultado"/>
+            <Button Text="Calcular" x:Name="Btncalcular" Clicked="Btncalcular_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
